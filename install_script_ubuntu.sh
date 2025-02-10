@@ -28,6 +28,12 @@ echo "Updating package lists..."
 sudo apt update || { echo "Error updating Apt packages"; exit 1; }
 
 # subscript pour oh my zsh parce que sinon sortie de script
+echo"installing oh my zsh"
+echo"exit the subscript with exit when the setup is done"
+echo"sorry, didn't find a better fix yet" 
+echo"....."
+echo"....."
+echo"DON'T FORGET, type exit and press enter to exit the subscript when setup is done!"
 (
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
 )
@@ -38,25 +44,25 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 if [ -f ~/.zshrc ]; then
     rm -f ~/.zshrc || { echo "Erreur: impossible de supprimer .zshrc"; exit 1; }
 fi
-ln -s ~/.dotfiles/.zshrc ~/.zshrc || { echo "Erreur: problème lors de la création du symlink pour .zshrc"; exit 1; }
+ln -s ~/.dotfilesx86/.zshrc ~/.zshrc || { echo "Erreur: problème lors de la création du symlink pour .zshrc"; exit 1; }
 
 # symlink .desktop shortcuts
 if [ -d ~/.local/share/applications ]; then
     rm -rf ~/.local/share/applications || { echo "Erreur: impossible de supprimer le dossier applications"; exit 1; }
 fi
-ln -s ~/.dotfiles/applications ~/.local/share/applications || { echo "Erreur: problème lors de la création du symlink pour applications"; exit 1; }
+ln -s ~/.dotfilesx86/applications ~/.local/share/applications || { echo "Erreur: problème lors de la création du symlink pour applications"; exit 1; }
 
 # symlink fonts
 if [ -d ~/.local/share/fonts ]; then
     rm -rf ~/.local/share/fonts || { echo "Erreur: impossible de supprimer le dossier fonts"; exit 1; }
 fi
-ln -s ~/.dotfiles/fonts ~/.local/share/fonts || { echo "Erreur: problème lors de la création du symlink pour fonts"; exit 1; }
+ln -s ~/.dotfilesx86/fonts ~/.local/share/fonts || { echo "Erreur: problème lors de la création du symlink pour fonts"; exit 1; }
 
 # symlink .config
 if [ -d ~/.config ]; then
     rm -rf ~/.config || { echo "Erreur: impossible de supprimer le dossier .config"; exit 1; }
 fi
-ln -s ~/.dotfiles/.config ~/.config || { echo "Erreur: problème lors de la création du symlink pour .config"; exit 1; }
+ln -s ~/.dotfilesx86/.config ~/.config || { echo "Erreur: problème lors de la création du symlink pour .config"; exit 1; }
 
 # Clone external plugins (Quickfix)
 # pluggin terminal autosuggestion
