@@ -1,9 +1,20 @@
 Voir install script pour plus d'information
 
-Rappel commande pour faire les simlink après git clone:
-
-ln -s .zshrc <la ou le dotfiles doit être pour être reconnu par shell/GUI etc...>
-
-Pour les Plugins avec lazy:
-- quickfix -> rm -rf repo pluggin dans .local/share/nvim/lazy
 # .dotfilesx86
+
+all in one
+dotfiles, install script and configuration script
+for x86 assembly developpement
+
+## steps:
+ 
+chmod +x .install_script_ubuntu.sh
+
+./install_script_ubuntu.sh # somewhere in the script you have to type exit and enter to exit a subscript
+
+zsh # if the shell isn't already loaded
+
+## tested on:
+
+ubuntu server
+
