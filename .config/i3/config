@@ -23,12 +23,6 @@ exec_always --no-startup-id timedatectl set-timezone America/New_York
 # start a terminal
 bindsym $super+Return exec kitty
 
-# start picom
-exec_always picom
-
-# hide mouse pointer 
-exec --no-startup-id ~/.dotfiles/bin/touchpadUnclutter.sh
-
 # do not focus preview window on open
 no_focus [title="^Peek preview$"]
 
