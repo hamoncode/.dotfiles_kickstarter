@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=yoooooo 
+Comment= youtube web site 
+Exec=firefox https://www.youtube.com
+Terminal=false
+Type=Application
+Icon=/home/vincent/.local/share/applications/DesktopIcons/youtube.png
+Categories=Network;
+
+

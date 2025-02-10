@@ -1,0 +1,12 @@
+numpy
+pandas
+scikit-learn
+jupyterlab-vim
+jupyterlab
+berserk                           
+beautifulsoup4                    
+jedi                              
+pillow                            
+python-dotenv                     
+requests                          
+

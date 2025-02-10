@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name= uqo
+Comment= site web université
+Exec=firefox https://uqo.ca/meconnecter?check_logged_in=1
+Terminal=false
+Type=Application
+Icon=/home/vincent/.local/share/applications/DesktopIcons/school.png
+Categories=Network;
+
+

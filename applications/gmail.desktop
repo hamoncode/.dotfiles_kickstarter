@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name= gmail
+Comment= email 
+Exec=firefox https://mail.google.com/mail/u/0/?hl=en#inbox
+Terminal=false
+Type=Application
+Icon=/home/vincent/.local/share/applications/DesktopIcons/search.png
+Categories=Network;
+
+

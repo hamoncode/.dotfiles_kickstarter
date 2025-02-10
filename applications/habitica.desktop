@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name= habitica
+Comment= todo list apps
+Exec=firefox https://habitica.com/
+Terminal=false
+Type=Application
+Icon=/home/vincent/.local/share/applications/DesktopIcons/habit.png
+Categories=Network;
+
+
