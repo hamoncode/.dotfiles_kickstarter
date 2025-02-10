@@ -1,3 +1,4 @@
+zsh
 wget
 build-essential
 libx11-dev
