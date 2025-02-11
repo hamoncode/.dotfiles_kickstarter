@@ -9,7 +9,7 @@ font pango:Ionicons 14, Poppins Regular 14
 floating_modifier $super
 
 # autostart
-exec --no-startup-id feh --bg-scale ~/.dotfilesx86/.wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/.dotfilesx86/.wallpaper.jpg
 
 # autotiling 
 exec_always autotiling -w 1 3 5 7 9
