@@ -44,7 +44,7 @@ pour le développement en assembleur x86
 
 installer la vm
 
-## dans le terminale:
+## dans le terminal:
 
 ```sh
 git clone https://github.com/hamoncode/.dotfilesx86.git
