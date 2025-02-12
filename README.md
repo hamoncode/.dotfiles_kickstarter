@@ -16,7 +16,7 @@ cd ~/.dotfilesx86
  
 chmod +x .install_script_ubuntu.sh
 
-./install_script_ubuntu.sh # 
+./install_script_ubuntu.sh 
 
 #[**somewhere in the script you have to type exit and enter to exit a subscript**]
 
