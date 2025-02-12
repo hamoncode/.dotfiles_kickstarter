@@ -33,8 +33,7 @@ ubuntu server
 
 ## Dotfilesx66
 
-## Tout-en-un  
-Dotfiles, script d’installation et script de configuration  
+Tout-en-un Dotfiles, script d’installation et script de configuration  
 pour le développement en assembleur x86  
 
 ## Étapes dans le terminal :  
