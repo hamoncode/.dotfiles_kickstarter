@@ -1,4 +1,4 @@
-Voir install script pour plus d'information
+Voir install_script_ubuntu.sh pour plus d'information
 
 # .dotfilesx86
 
