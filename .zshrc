@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH. export
-export PATH=$HOME/vincent/dotfile/.local/bin:$PATH
+export PATH=$HOME/dotfilesx86/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -8,8 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="/opt/nvim-linux64/bin:$PATH"
 
 # mes shell apps
-export PATH="/home/vincent/bashProjects/ShellTimer:$PATH" export 
-PATH="/home/vincent/flashcard:$PATH"
+export PATH="/$HOME/bashProjects/ShellTimer:$PATH" export 
+PATH="/$HOME/flashcard:$PATH"
 
 # Path à mes scripts
 export PATH="$HOME/.dotfiles/bin:$PATH"
@@ -198,7 +198,7 @@ alias neofind='nvim $(fzf -m --preview="bat --color=always {}")'
 alias dbfs='mysql -u root -p <'
 alias venvPy='source ~/.venvs/venvPython/bin/activate'
 # Alias to navigate to your project environment
-alias lenvJs='cd /home/vincent/.venvs/jsEnv/projects/ && echo "Switched to JavaScript environment: jsEnv"'
+alias lenvJs='cd /$HOME/.venvs/jsEnv/projects/ && echo "Switched to JavaScript environment: jsEnv"'
 
 # Alias for global package installation
 alias npminstallG='npm install -g'
@@ -238,9 +238,8 @@ startup() {
 }
 startup
 
-
-PATH="/home/vincent/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/vincent/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/vincent/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/vincent/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/vincent/perl5"; export PERL_MM_OPT;
+PATH="/$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/$HOME/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/$HOME/perl5"; export PERL_MM_OPT;
