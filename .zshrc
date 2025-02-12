@@ -9,7 +9,7 @@ export PATH="/opt/nvim-linux64/bin:$PATH"
 
 # mes shell apps
 export PATH="/$HOME/bashProjects/ShellTimer:$PATH" export 
-PATH="/$HOME/flashcard:$PATH"
+PATH="$HOME/flashcard:$PATH"
 
 # Path à mes scripts
 export PATH="$HOME/.dotfiles/bin:$PATH"
