@@ -7,7 +7,11 @@ all in one
 dotfiles, install script and configuration script
 for x86 assembly developpement
 
-## steps in terminal:
+## steps :
+
+installer la vm 
+
+### terminal
 
 ```sh
 git clone https://github.com/hamoncode/.dotfilesx86.git
@@ -36,7 +40,11 @@ ubuntu server
 Tout-en-un Dotfiles, script d’installation et script de configuration  
 pour le développement en assembleur x86  
 
-## Étapes dans le terminal :  
+## Étapes:  
+
+installer la vm
+
+## dans le terminale:
 
 ```sh
 git clone https://github.com/hamoncode/.dotfilesx86.git
