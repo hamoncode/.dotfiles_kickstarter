@@ -5,7 +5,7 @@ Comment=site web de cour en ligne
 Exec= firefox https://www.udemy.com/
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/online-learning.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/online-learning.png
 Categories=Network;
 
 

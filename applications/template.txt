@@ -5,6 +5,6 @@ Comment= <insert infos of the site>
 Exec=librewolf <insertURL>
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/<instert png>
+Icon="$HOME"/.local/share/applications/DesktopIcons/<instert png>
 Categories=Network;
 

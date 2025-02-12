@@ -5,7 +5,7 @@ Comment= moodle shortcut
 Exec=firefox https://moodle.uqo.ca/my/courses.php
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/graduation.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/graduation.png
 Categories=Network;
 
 

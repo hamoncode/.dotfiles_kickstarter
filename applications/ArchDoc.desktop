@@ -6,6 +6,6 @@ Comment=Archlinux.org
 Exec=firefox https://archlinux.org/
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/archIcon.jpg
+Icon="$HOME"/.local/share/applications/DesktopIcons/archIcon.jpg
 Categories=Network;
 

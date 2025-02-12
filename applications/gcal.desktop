@@ -5,7 +5,7 @@ Comment=site web de google calendar
 Exec=firefox https://calendar.google.com/calendar/u/0/r
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/agenda.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/agenda.png
 Categories=Network;
 
 

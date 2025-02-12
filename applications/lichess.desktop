@@ -5,7 +5,7 @@ Comment=lichess.com site
 Exec=firefox https://lichess.org/
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/lichess.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/lichess.png
 Categories=Network;
 
 

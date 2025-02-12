@@ -5,7 +5,7 @@ Comment= messagerie facebook
 Exec=firefox https://www.messenger.com/t/2889254654514703
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/messenger.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/messenger.png
 Categories=Network;
 
 

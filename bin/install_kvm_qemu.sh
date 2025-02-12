@@ -3,7 +3,7 @@
 # script qui configure et installe une vm windows avec kvm et qemu
 # TODO: étape de validation de l'image windows.
 
-#iso_path = "/home/vincent/Downloads/Win10_22H2_English_x64v1.iso"
+#iso_path = ""$HOME"/Downloads/Win10_22H2_English_x64v1.iso"
 
 set -e
 
@@ -46,7 +46,7 @@ usermod -aG libvirt $(whoami) || { echo "erreur lors de groupe 'libvirt'"; exit 
 
 # Création d'une image disque pour le VM
 read -p "Chemin du disque virtuel à créer (par défaut: ~/windows.qcow2) : " disk_path
-disk_path=${disk_path:-/home/vincent/windows.qcow2}
+disk_path=${disk_path:-"$HOME"/windows.qcow2}
 read -p "Taille du disque virtuel en Go (par défaut: 50) : " disk_size
 disk_size=${disk_size:-50}
 
@@ -62,7 +62,7 @@ virt-install \
   --cpu host \
   --os-variant win10 \
   --disk path="$disk_path",format=qcow2 \
-  --cdrom "/home/vincent/Downloads/Win10_22H2_English_x64v1.iso" \
+  --cdrom ""$HOME"/Downloads/Win10_22H2_English_x64v1.iso" \
   --network network=default,model=virtio \
   --graphics spice \
   --sound ich9 \

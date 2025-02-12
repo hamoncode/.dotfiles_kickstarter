@@ -5,7 +5,7 @@ Comment= site web de chess.com
 Exec=firefox https://www.chess.com/home
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/chess.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/chess.png
 Categories=Network;
 
 

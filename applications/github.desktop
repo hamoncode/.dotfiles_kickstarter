@@ -5,7 +5,7 @@ Comment= site web github
 Exec=firefox https://github.com/
 Terminal=false
 Type=Application
-Icon=/home/vincent/.local/share/applications/DesktopIcons/github.png
+Icon="$HOME"/.local/share/applications/DesktopIcons/github.png
 Categories=Network;
 
 
