@@ -22,7 +22,7 @@ chmod +x .install_script_ubuntu.sh
 
 ./install_script_ubuntu.sh 
 
-#[**somewhere in the script you have to type "exit" and enter to exit a subscript**]
+#[**somewhere in the script you have to type "exit" and enter in terminal to exit a subscript**]
 
 echo $SHELL # [ user should see /usr/bin/zsh, if not: ]
 
