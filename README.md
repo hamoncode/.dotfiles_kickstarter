@@ -9,7 +9,7 @@ for x86 assembly developpement
 
 ## steps :
 
-installer la vm 
+install vm 
 
 ### terminal
 
