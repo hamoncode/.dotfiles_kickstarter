@@ -7,11 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add /opt/nvim-linux64/bin to PATH
 export PATH="/opt/nvim-linux64/bin:$PATH"
 
-# mes shell apps
-export PATH="/$HOME/bashProjects/ShellTimer:$PATH" export 
-PATH="$HOME/flashcard:$PATH"
-
-# Path à mes scripts
+# Path au binaries
 export PATH="$HOME/.dotfiles/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will load a random theme each time 
@@ -102,125 +98,13 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 # recherche un terme de tes notes et ouvre le fichier avec neovim
 
-search_notes() {
-    local term="$1"
-
-    if [[ -z "$term" ]]; then
-        echo "Usage: search_notes <terme>"
-        return 1
-    fi
-
-    rg --files-with-matches "$term" *.md | fzf | xargs -r nvim
-}
-
+# les fonctions peuvent être mis directement ici
 cc() {
     cat "$1" | xclip -selection clipboard
 }
 
-
-mergeintomain() { git checkout main && git pull origin main && git merge "$1" && git push 
-    origin main
-}
-
-rust() { if [ $# -eq 0 ]; then
-        echo "Usage: rust_run <project_folder>" return 1
-    fi
-
-    local project_folder="$1"
-    
-    # Check if Cargo.toml exists in the provided project folder
-    if [ ! -f "$project_folder/Cargo.toml" ]; then echo "Error: No Cargo.toml found in 
-        $project_folder." return 1
-    fi
-
-    local main_project="$(basename "$(realpath "$project_folder")")"
-
-    # Build and run the main project in the provided folder
-    (cd "$project_folder" && cargo run --bin "$main_project")
-}
-
-createGitProject() {
-    local github_username=$1
-    local repository_name=$2
-
-    # Check if the repository already exists on GitHub
-    if gh repo view $github_username/$repository_name &>/dev/null; then 
-        echo "Repository $github_username/$repository_name already exists on GitHub."
-        return 1
-    fi
-
-    # Initialize Git repository locally with main as default branch
-    git init 
-    git symbolic-ref HEAD refs/heads/main
-    git add . 
-    git commit -m "Initial commit" --allow-empty
-
-    # Create repository on GitHub
-    gh repo create $github_username/$repository_name --private || return 1
-
-    # Add GitHub repository as remote
-    git remote add origin git@github.com:$github_username/$repository_name
-
-    # Push to GitHub
-    git push -u origin main || return 1
-
-    echo "Git repository $repository_name successfully created on GitHub."
-}
-
 # Aliases:
-
 alias py='python3' 
-alias ach='python3 code.py add 1' 
-alias arh='python3 rev.py add' 
-alias cch='python3 code.py commit' 
-alias gs='git status' 
-alias ga='git add .' 
-alias gc='git commit' 
-alias c='clear' 
-alias co='touch' 
-alias de='vsc' 
-alias yo='youtube' 
-alias cookiecutter="~/.local/bin/cookiecutter" 
-alias ja="javac Main.java && java Main" 
-alias ij="intellij-idea-community" 
-alias cpdf="libreoffice --convert-to pdf"
-alias emac="emacsclient -c -a 'emacs'"
-alias jac='find . -name "*.java" -exec javac -d ../bin {} + && java -cp ../bin $1'
-alias disableMysql='sudo systemctl disable mysql'
-alias stopMysql='sudo systemctl stop mysql'
-alias restartMysql='sudo systemctl restart mysql'
-alias startMysql='sudo systemctl start mysql'
-alias initMysql='sudo systemctl enable mysql'
-alias statusMysql='sudo systemctl status mysql'
-alias mysqlWB='mysql-workbench-community'
-alias loginMysql='sudo mysql -u root -p'
-alias neofind='nvim $(fzf -m --preview="bat --color=always {}")'
-alias dbfs='mysql -u root -p <'
-alias venvPy='source ~/.venvs/venvPython/bin/activate'
-# Alias to navigate to your project environment
-alias lenvJs='cd /$HOME/.venvs/jsEnv/projects/ && echo "Switched to JavaScript environment: jsEnv"'
-
-# Alias for global package installation
-alias npminstallG='npm install -g'
-
-# Alias for local package installation (from package.json)
-alias npminstallL='npm install'
-
-
-# Aliases for MariaDB
-alias disableMariaDB='sudo systemctl disable mariadb'
-alias stopMariaDB='sudo systemctl stop mariadb'
-alias restartMariaDB='sudo systemctl restart mariadb'
-alias startMariaDB='sudo systemctl start mariadb'
-alias initMariaDB='sudo systemctl enable mariadb'
-alias statusMariaDB='sudo systemctl status mariadb'
-alias mariadbWB='mysql-workbench-community' # If using MySQL Workbench for MariaDB
-alias loginMariaDB='sudo mariadb -u root -p'
-alias mysqlAdmin='sudo mariadb-admin -u root -p'
-alias backupMariaDB='sudo mysqldump -u root -p'
-alias restoreMariaDB='sudo mysql -u root -p'
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
-# scripts de démarrage
 
 # activité du terminal au login 
 startup() {
@@ -237,6 +121,8 @@ startup() {
     echo "Cette session commence au: `date +"%Y-%m-%d %H:%M:%S"`"    
 }
 startup
+
+# autres path que le systeme a ajouté tout seul
 
 PATH="/$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
