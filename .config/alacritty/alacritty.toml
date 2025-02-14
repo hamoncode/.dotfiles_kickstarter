@@ -1,6 +1,10 @@
 [font]
 size = 24
 
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
 [colors.primary]
 background = "0x143d20"  # Dark green grass, classic RCT look
 foreground = "0xffe27e"  # Bright golden-yellow like the RCT UI
