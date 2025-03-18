@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=chad
-Comment=Open OpenAI's website in Chromium
-Exec=chromium https://www.google.com/search?q=chatgpt&oq=chat&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg8IARBFGDsYgwEYsQMYgAQyBggCECMYJzINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDITCAUQLhiDARjHARixAxjRAxiABDIWCAYQLhivARjHARiABBiYBRiZBRieBTINCAcQABiDARixAxiABDIZCAgQLhivARjHARiABBiOBRiYBRiZBRieBTIHCAkQABiPAtIBCTEwOTZqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8
-Terminal=false
-Type=Application
-Icon="$HOME"/.local/share/applications/DesktopIcons/robot.png
-Categories=Network;
