@@ -4,9 +4,6 @@ export PATH=$HOME/dotfilesx86/.local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Add /opt/nvim-linux64/bin to PATH
-export PATH="/opt/nvim-linux64/bin:$PATH"
-
 # Path au binaries
 export PATH="$HOME/.dotfiles/bin:$PATH"
 
@@ -80,7 +77,6 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -99,6 +95,7 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 # recherche un terme de tes notes et ouvre le fichier avec neovim
 
 # les fonctions peuvent être mis directement ici
+# mais pour coucil de clarté il seront mis dans /dotfilesx86/bin
 cc() {
     cat "$1" | xclip -selection clipboard
 }
@@ -122,10 +119,3 @@ startup() {
 }
 startup
 
-# autres path que le systeme a ajouté tout seul
-
-PATH="/$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/$HOME/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/$HOME/perl5"; export PERL_MM_OPT;
