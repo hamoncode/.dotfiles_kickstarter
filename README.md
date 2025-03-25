@@ -4,11 +4,9 @@
 ## Dotfilesx86
 
 Tout-en-un Dotfiles, script d’installation et script de configuration  
-pour startup les élèves de l'uqo a utiliser le shell
+pour l'activité Git et shell de l'UQODE.
 
 ## Étapes:  
-
-installer la vm
 
 ## dans le terminal:
 
