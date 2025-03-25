@@ -46,24 +46,6 @@ if [ -f ~/.zshrc ]; then
 fi
 ln -s ~/.dotfilesx86/.zshrc ~/.zshrc || { echo "Erreur: problème lors de la création du symlink pour .zshrc"; exit 1; }
 
-# symlink .desktop shortcuts
-if [ -d ~/.local/share/applications ]; then
-    rm -rf ~/.local/share/applications || { echo "Erreur: impossible de supprimer le dossier applications"; exit 1; }
-fi
-ln -s ~/.dotfilesx86/applications ~/.local/share/applications || { echo "Erreur: problème lors de la création du symlink pour applications"; exit 1; }
-
-# symlink fonts
-if [ -d ~/.local/share/fonts ]; then
-    rm -rf ~/.local/share/fonts || { echo "Erreur: impossible de supprimer le dossier fonts"; exit 1; }
-fi
-ln -s ~/.dotfilesx86/fonts ~/.local/share/fonts || { echo "Erreur: problème lors de la création du symlink pour fonts"; exit 1; }
-
-# symlink .config
-if [ -d ~/.config ]; then
-    rm -rf ~/.config || { echo "Erreur: impossible de supprimer le dossier .config"; exit 1; }
-fi
-ln -s ~/.dotfilesx86/.config ~/.config || { echo "Erreur: problème lors de la création du symlink pour .config"; exit 1; }
-
 # Clone external plugins (Quickfix)
 # pluggin terminal autosuggestion
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || { echo "Erreur: problème lors du clonage de zsh-autosuggestions"; exit 1; }
