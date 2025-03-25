@@ -1,5 +1,38 @@
 
-[Étape en francais plus bas]
+[Steps in english will follow]
+
+## Dotfilesx86
+
+Tout-en-un Dotfiles, script d’installation et script de configuration  
+pour startup les élèves de l'uqo a utiliser le shell
+
+## Étapes:  
+
+installer la vm
+
+## dans le terminal:
+
+```sh
+git clone https://github.com/hamoncode/.dotfilesx86.git
+
+cd ~/.dotfilesx86
+
+chmod +x install_script_ubuntu.sh
+
+./install_script_ubuntu.sh
+
+# **[ a un moment donné, dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript]**
+
+echo $SHELL  # L'utilisateur devrait voir /usr/bin/zsh, sinon :
+
+zsh
+
+```
+Conseil : À ce stade, il est recommandé de redémarrer le système.
+
+Testé sur :
+Ubuntu 
+
 
 # .dotfilesx86
 
@@ -33,36 +66,5 @@ zsh
 
 ## tested on:
 
-ubuntu server
+ubuntu 
 
-## Dotfilesx66
-
-Tout-en-un Dotfiles, script d’installation et script de configuration  
-pour le développement en assembleur x86  
-
-## Étapes:  
-
-installer la vm
-
-## dans le terminal:
-
-```sh
-git clone https://github.com/hamoncode/.dotfilesx86.git
-
-cd ~/.dotfilesx86
-
-chmod +x install_script_ubuntu.sh
-
-./install_script_ubuntu.sh
-
-# **[ a un moment donné, dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript]**
-
-echo $SHELL  # L'utilisateur devrait voir /usr/bin/zsh, sinon :
-
-zsh
-
-```
-Conseil : À ce stade, il est recommandé de redémarrer le système.
-
-Testé sur :
-Ubuntu Server
