@@ -3,4 +3,3 @@ wget
 build-essential
 curl
 neofetch
-ripgrep
