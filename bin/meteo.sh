@@ -3,6 +3,6 @@
 # declaration ville
 
 
-# curl la meteo avec 
+# curl la meteo avec https://wttr.in/
 
 
