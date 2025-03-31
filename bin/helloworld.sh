@@ -1,3 +1,7 @@
-#!/bin/sh 
+#!/bin/bash
+# shebang -> set le bash path
 
-echo "helloworld"
+# chaque ligne écris ici répond séquentiellement comme dans la ligne de commande
+
+# comment print hello world dans la ligne de commande:
+echo "hello world"
