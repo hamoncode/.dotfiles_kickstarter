@@ -42,6 +42,7 @@ sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/ins
 
 # symlink .zshrc
 if [ -f ~/.zshrc ]; then
+    cp ~/.zshrc ~/.zshrc.bak || { echo "Erreur: impossible de sauvegarder .zshrc"; exit 1; }
     rm -f ~/.zshrc || { echo "Erreur: impossible de supprimer .zshrc"; exit 1; }
 fi
 ln -s ~/.dotfilesx86/.zshrc ~/.zshrc || { echo "Erreur: problème lors de la création du symlink pour .zshrc"; exit 1; }
