@@ -1,5 +1,4 @@
 zsh
-wget
 build-essential
 curl
 neofetch
