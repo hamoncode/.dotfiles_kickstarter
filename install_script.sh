@@ -27,7 +27,7 @@ done
 # Update pour s'assurer tous les packages sont à jours
 echo "Updating package lists..."
 sudo apt update || { echo "Error updating Apt packages"; exit 1; }
-sudo apt upgrade || { echo "Error upgrading Apt packages"} 
+sudo apt upgrade || { echo "Error upgrading Apt packages";exit 1; } 
 
 # subscript pour oh my zsh parce que sinon sortie de script
 echo"installing oh my zsh"
