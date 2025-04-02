@@ -20,7 +20,7 @@ chmod +x install_script_ubuntu.sh
 ./install_script_ubuntu.sh
 ```
 
-##  a un moment donné, dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript:
+##  a un moment donné dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript:
 
 ```sh
 exit
