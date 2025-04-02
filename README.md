@@ -32,10 +32,11 @@ echo $SHELL  # L'utilisateur devrait voir /usr/bin/zsh, sinon :
 zsh
 
 ```
-Conseil : À ce stade, il est recommandé de redémarrer le système.
+Conseil : À ce stade sur linux, il est recommandé de redémarrer le système.
 
 Testé sur :
-Ubuntu 
+Ubuntu
+WSL
 
 
 # .dotfilesx86
