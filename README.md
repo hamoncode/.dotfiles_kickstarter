@@ -18,9 +18,15 @@ cd ~/.dotfilesx86
 chmod +x install_script_ubuntu.sh
 
 ./install_script_ubuntu.sh
+```
 
-# **[ a un moment donné, dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript]**
+# **[ a un moment donné, dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript]:**
 
+```sh
+exit
+```
+# **[ensuite fermer et ouvrir le terminale pour tester]:**
+```sh
 echo $SHELL  # L'utilisateur devrait voir /usr/bin/zsh, sinon :
 
 zsh
