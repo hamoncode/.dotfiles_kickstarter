@@ -12,6 +12,7 @@
   - [x] cp -r dotfilesx86 dotfiles
   - [x] cd dotfiles
   - [x] rm -rf .git
+- [ ] parler du workflow de git
 - [ ] connexion compte git hub sur ligne de commande
   - [ ] git config --global user.name "My Name"
   - [ ] git config --global user.email "myemail@exampl.com"
