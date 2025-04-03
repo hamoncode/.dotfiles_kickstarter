@@ -1,12 +1,17 @@
 # Ordre de la présentation de Vincent
 
 ## theorie git et git hub
-- [ ] git vs git hub
-- [ ] sauvegarde des codes en snapshot
-- [ ] collaboration accrue au niveau des branches
+- [x] git vs git hub
+- [x] sauvegarde des codes en snapshot
+- [x] collaboration accrue au niveau des branche
 
 ## bref introduction github
-- [ ] git hub vs git
+- [x] installation de git
+- [x] cloner le repo
+- [x] git hub vs git
+  - [x] cp -r dotfilesx86 dotfiles
+  - [x] cd dotfiles
+  - [x] rm -rf .git
 - [ ] connexion compte git hub sur ligne de commande
   - [ ] git config --global user.name "My Name"
   - [ ] git config --global user.email "myemail@exampl.com"
@@ -16,9 +21,6 @@
 
 ## bref introduction git 
 - [ ] intro a git
-  - [ ] cp -r .dotfilesx86 .dotfiles
-  - [ ] cd .dotfiles
-  - [ ] rm -rf .git
   - [ ] git init
   - [ ] touch README.md
   - [ ] git add .
