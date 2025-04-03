@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Fichier contenant la liste des packages Homebrew
-PACKAGE_BREW="packagesBrew.txt"
+PACKAGE_BREW="packageBrew.txt"
 
 # Chemin du script (pour créer les symlinks)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
