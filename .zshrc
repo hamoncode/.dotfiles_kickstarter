@@ -1,11 +1,10 @@
-# If you come from bash you might have to change your $PATH. export
-export PATH=$HOME/dotfilesx86/.local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Path au binaries
-export PATH="$HOME/.dotfiles/bin:$PATH"
+export PATH="$HOME/dotfiles_kickstarter/bin:$PATH"
+
+# Oh my zsh pluggin
 
 # Set name of the theme to load --- if set to "random", it will load a random theme each time 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -36,28 +35,11 @@ alias-finder copypath gitfast jsontools python dirhistory vscode web-search)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
 # les fonctions peuvent être mis directement ici
-# mais pour coucil de clarté il seront mis dans /dotfilesx86/bin
 cc() {
     cat "$1" | xclip -selection clipboard
 }
 
 # Aliases:
 alias py='python3' 
-
-# activité du terminal au login 
-startup() {
-    echo "do you want to update? (y/n)" 
-    read response
-    if [ "$response" = "y" ]; then
-        sudo apt update
-        sudo apt upgrade
-    fi
-    neofetch
-    echo ""
-    echo "Bonjour `whoami`"
-    echo ""
-    echo "Cette session commence au: `date +"%Y-%m-%d %H:%M:%S"`"    
-}
-startup
-
