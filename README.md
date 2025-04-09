@@ -1,75 +1,30 @@
 
 [Steps in english will follow]
 
-## Dotfilesx86
+# Dotfiles_kickstarter
 
 Tout-en-un Dotfiles, script d’installation et script de configuration  
 pour l'activité Git et shell de l'UQODE.
 
 ## Étapes:  
 
-## dans le terminal:
+## exemple dans le terminal avec ubuntu:
 
 ```sh
-git clone https://github.com/hamoncode/.dotfilesx86.git
 
-cd ~/.dotfilesx86
+cd ubuntu
 
-chmod +x install_script_ubuntu.sh
+chmod +x install_script1_ubuntu.sh
+chmod +x install_script2_ubuntu.sh
 
-./install_script_ubuntu.sh
-```
-
-##  a un moment donné dans le script, il faut entrer "exit" dans le terminal pour sortir du subscript:
-
-```sh
-exit
-```
-## ensuite fermer et ouvrir le terminale pour tester:
-```sh
-echo $SHELL  # L'utilisateur devrait voir /usr/bin/zsh, sinon :
-
-zsh
+./install_script1_ubuntu.sh
+./install_script2_ubuntu.sh
 
 ```
-Conseil : À ce stade sur linux, il est recommandé de redémarrer le système.
 
 Testé sur :
 Ubuntu
 WSL
+mac
 
-
-# .dotfilesx86
-
-all in one
-dotfiles, install script and configuration script
-for x86 assembly developpement
-
-## steps :
-
-install vm 
-
-### terminal
-
-```sh
-git clone https://github.com/hamoncode/.dotfilesx86.git
-
-cd ~/.dotfilesx86
- 
-chmod +x .install_script_ubuntu.sh
-
-./install_script_ubuntu.sh 
-
-#[**somewhere in the script you have to type "exit" and enter in terminal to exit a subscript**]
-
-echo $SHELL # [ user should see /usr/bin/zsh, if not: ]
-
-zsh 
-
-```
-[now is a good idea to reboot the system]
-
-## tested on:
-
-ubuntu 
 
