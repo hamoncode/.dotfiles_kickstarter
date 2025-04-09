@@ -1,5 +1,4 @@
 
-[Steps in english will follow]
 
 # Dotfiles_kickstarter
 
