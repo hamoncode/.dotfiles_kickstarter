@@ -29,13 +29,5 @@ echo "Updating package lists..."
 sudo apt update || { echo "Error updating Apt packages"; exit 1; }
 sudo apt upgrade || { echo "Error upgrading Apt packages";exit 1; } 
 
-# subscript pour oh my zsh parce que sinon sortie de script
-echo"installing oh my zsh"
-echo"exit the subscript with exit when the setup is done"
-echo"sorry, didn't find a better fix yet" 
-echo"....."
-echo"....."
-echo"DON'T FORGET, type exit and press enter to exit the subscript when setup is done!"
-
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" || { echo "Error installing Oh My Zsh"; exit 1; }
 
