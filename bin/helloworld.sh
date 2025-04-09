@@ -5,4 +5,4 @@
 
 # comment print hello world dans la ligne de commande:
 
-#echo "hello world"
+echo "hello world"
