@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# declaration ville
+# Si aucun argument n'est fourni, la ville par défaut sera 'gatineau'
+ville=${1:-gatineau}
 
-# curl la meteo avec https://wttr.in/
-
-
+curl -sS "http://wttr.in/${ville}" | head -n 7
