@@ -3,7 +3,7 @@
 # Usage: create_repo.sh <repository-name>
 
 # CONFIGURATION **entrer votre user git**
-github_username=""
+github_username="hamoncode"
 repository_name="$1"
 
 # Initialize Git repository
